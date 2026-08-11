@@ -1,0 +1,11 @@
+horizon: 20
+attention_budget: 4
+p_grid_points: 21
+u_grid_points: 11
+simulation_seeds: 100
+model:
+  review_value_scale: 0.65
+  review_cost: 0.04
+  revision_prob_scale: 0.65
+  feedback_strength: 0.18
+  transition_spread: 0.08
