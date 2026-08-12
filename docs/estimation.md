@@ -10,9 +10,9 @@ Recommended columns:
 
 Interpret promise as
 
-\[
+$$
 p_t=P(\Delta_t>\epsilon\mid z_t),
-\]
+$$
 
 where `Delta_t` is robust held-out improvement over the incumbent and `z_t` contains automatically available candidate features.
 
@@ -41,9 +41,9 @@ Normalize the chosen uncertainty statistic to `[0,1]`.
 
 Estimate
 
-\[
+$$
 \pi_o(p,u)=P(o\mid p,u,H)
-\]
+$$
 
 from reviewed candidates. For a first normative simulation with no human subjects, define a reproducible **oracle reviewer** using a hidden validation set:
 
@@ -57,9 +57,9 @@ This supports policy development but must be described as a **simulated expert /
 
 Estimate
 
-\[
+$$
 F_{a,o}(p',u'\mid p,u)
-\]
+$$
 
 by discretizing `(p,u)` and estimating next-state frequencies conditional on action and review outcome.
 
@@ -76,15 +76,15 @@ The provided empirical transition estimator uses binned counts with Laplace smoo
 
 Preferred empirical reward:
 
-\[
+$$
 r_t=M_{t+1}-M_t,
-\]
+$$
 
 or, for longer-term credit,
 
-\[
+$$
 r_t=E[M_T\mid a_t]-E[M_T\mid \text{counterfactual baseline}].
-\]
+$$
 
 For the first paper, incremental incumbent improvement is easier to identify and interpret. Final-score comparisons across policies remain the primary experimental endpoint.
 
