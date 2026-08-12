@@ -14,9 +14,9 @@ The research contribution is the **human-attention policy**, not a particular se
 
 At iteration `t`, the minimal state is
 
-\[
+$$
 S_t=(p_t,u_t,b_t,n_t),
-\]
+$$
 
 where:
 
@@ -27,9 +27,9 @@ where:
 
 The finite-horizon Bellman equation is
 
-\[
+$$
 V_n(p,u,b)=\max\{Q_R,Q_P,Q_H\},
-\]
+$$
 
 with `R=reject`, `P=promote`, and `H=human review`. Review is infeasible when `b=0`.
 
