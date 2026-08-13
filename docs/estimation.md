@@ -6,7 +6,7 @@ Recommended columns:
 
 `run_id, seed, t, candidate_id, parent_id, raw_score, heldout_score, incumbent_before, promise_raw, promise, uncertainty, action, review_outcome, revision_prompt, reward, next_promise, next_uncertainty, final_best_score`
 
-## Promise `p_t`
+## Promise $$p_t$$
 
 Interpret promise as
 
@@ -25,7 +25,7 @@ Practical estimators:
 
 `src/hai_funsearch/estimation/empirical.py` includes a dependency-light bin calibrator.
 
-## Uncertainty `u_t`
+## Uncertainty $$u_t$$
 
 Possible sources, all available without a human study:
 
