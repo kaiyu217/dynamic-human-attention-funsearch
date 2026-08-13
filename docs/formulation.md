@@ -59,7 +59,7 @@ $$
 r_t = M_{t+1}-M_t,
 $$
 
-where `M_t` is the best validated score before iteration `t`.
+where $$M_t$$ is the best validated score before iteration `t`.
 
 For the simplified threshold model, define ex-ante rewards
 
@@ -101,7 +101,7 @@ $$
 
 Choose the action with maximum value. The one-step model isolates the **value of information (VOI)** from dynamic opportunity cost.
 
-If `r_P-r_R` is increasing in `p` and the incremental review value
+If $$r_P-r_R$$ is increasing in `p` and the incremental review value
 
 $$
 VOI(p,u)=r_H-\max\{r_R,r_P\}
@@ -117,7 +117,7 @@ such that weak candidates are rejected, strong candidates are promoted, and suff
 
 ## 8. Finite-horizon DP
 
-Let `V_n(p,u,b)` denote optimal expected future reward with `n` iterations and `b` review units remaining.
+Let $$V_n(p,u,b)$$ denote optimal expected future reward with `n` iterations and `b` review units remaining.
 
 $$
 Q_R=r_R+\mathbb E_{F_R}[V_{n-1}],
